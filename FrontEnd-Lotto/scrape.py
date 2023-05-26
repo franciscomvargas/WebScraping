@@ -33,11 +33,11 @@ def get_html(year):
     return resp.text
 
 def write_html_page(file_name, source_page):
-    with open(f'{file_name}.html', 'w') as fw:
+    with open(f'.data/{file_name}.html', 'w') as fw:
         fw.writelines(source_page)
     fw.close()
 def read_html_page(file_name):
-    with open(f'{file_name}.html', 'r') as fr:
+    with open(f'.data/{file_name}.html', 'r') as fr:
         source = fr.readlines()
     fr.close()
 
